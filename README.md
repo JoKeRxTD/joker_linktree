@@ -2,6 +2,10 @@
 
 This is a my version of a Linktree to help users spread there social links and other links in a more organized way and with a better design.
 
+## preview
+
+![preview](./public/joker_linktree_preview.png)
+
 ## Installing
 
 Download our latest release [here](https://github.com/JoKeRxTD/joker_linktree.git) or clone our repository with the following command:
