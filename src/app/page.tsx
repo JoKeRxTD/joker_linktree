@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import * as React from "react"
 import { Clock } from './timezoneapi'
 import { Input } from "../componants/ui/input"
 import { Label } from "../componants/ui/label"
