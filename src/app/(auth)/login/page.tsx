@@ -1,3 +1,4 @@
+import { FC } from "react"
 import Image from 'next/image'
 import { Input } from "../../../componants/ui/input"
 import { Label } from "../../../componants/ui/label"
@@ -9,13 +10,18 @@ import {
     CardFooter,
     CardHeader,
     CardTitle,
-  } from "../../../componants/ui/card"
-export const dynamicParams = true
-export const revalidate = "300"
+} from "../../../componants/ui/card"
+import { MainNav } from '../../../componants/ui/main-nav'
+import { options } from "../../api/auth/[...nextauth]/options"
+import { getServerSession } from "next-auth/next"
+import UserCard from "../../../componants/ui/UserCard"
+import { redirect } from "next/navigation"
 
-export default function Login() {
+export default async function Login() {
+    const session = await getServerSession(options)
     return (
         <main className="flex flex-col items-center justify-center min-h-screen py-2 bg-slate-900 text-slate-foreground">
+            <MainNav/>
             <div className='w-[550px] h-[550px] flex flex-col items-center justify-center border-2 border-slate-600 bg-slate-900 rounded-md text-cyan-600'>
                 <Image
                     src="/joker_new.png"

@@ -1,4 +1,6 @@
+import { FC } from "react"
 import Image from 'next/image'
+import { MainNav } from '../componants/ui/main-nav'
 import { Clock } from './timezoneapi'
 import { Input } from "../componants/ui/input"
 import { Label } from "../componants/ui/label"
@@ -17,7 +19,8 @@ export const revalidate = "300"
 export default function Home() {
   const now = new Date()
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen py-2 bg-slate-900 text-slate-foreground">
+    <main className="flex flex-col items-center justify-center min-h-screen py-2 bg-slate-900">
+      <MainNav/>
         <Card className="w-[550px] h-[550px] flex flex-col items-center justify-center border-2 border-slate-600 bg-slate-900">
           <CardHeader className='flex flex-col items-center justify-center space-y-2'>
               <Image
