@@ -1,4 +1,3 @@
-import { options } from "../../app/api/auth/[...nextauth]/options"
 import Link from "next/link"
 import React from "react"
 import { redirect } from "next/navigation"
