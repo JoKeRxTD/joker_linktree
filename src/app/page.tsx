@@ -13,6 +13,7 @@ import {
   CardHeader,
   CardTitle,
 } from "../componants/ui/card"
+import Link from "next/link"
 export const dynamicParams = true
 export const revalidate = "300"
 
@@ -33,10 +34,14 @@ export default function Home() {
           </CardHeader>
           <CardContent className='flex flex-col items-center text-center justify-center space-y-2 text-[#fafafa]'>
             <CardTitle className='font-bold text-2xl'>JoKeR</CardTitle>
-            <CardDescription className='text-sm text-[#fafafa]'>I am Tom (jokerxtd) . 31 y/o Inspired Developer/Software Engineer , Verified Discord Bot Developer , and Web Developer</CardDescription>
+            <CardDescription className='text-sm text-[#fafafa]'>I am Tom (jokerxtd) . 32 y/o Inspired Developer/Software Engineer , Verified Discord Bot Developer , and Web Developer</CardDescription>
           </CardContent>
         <CardFooter className='flex justify-center space-x-2 w-full text-[#fafafa]'>
+          <Link
+            href="https://jokerdev.xyz"
+          >
           <Button className='border-slate-600' variant="outline">Portfolio</Button>
+          </Link>
           <Button className='border-slate-600' variant="outline">Discord</Button>
           <Button className='border-slate-600' variant="outline">Store</Button>
           <Button className='border-slate-600' variant="outline">Github</Button>
