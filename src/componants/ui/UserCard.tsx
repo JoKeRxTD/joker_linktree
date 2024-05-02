@@ -32,14 +32,6 @@ export default async function UserCard() {
     } else {
         return (
             <div className="flex flex-col items-center p-8 w-full h-full">
-                
-                <Image
-                    src={session.user.image}
-                    alt="JoKeR"
-                    width={100}
-                    height={100}
-                    className="rounded-full border-2 border-slate-600 mb-6"
-                />
                 <h1 className='text-2xl font-bold'>Dashboard</h1>
                 <p className='text-sm text-center'>Welcome back {session.user.name}!</p>
                 <p className='text-sm text-center'>You are logged in as {session.user.email}</p>
