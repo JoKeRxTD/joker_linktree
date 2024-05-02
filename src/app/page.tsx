@@ -44,7 +44,7 @@ export default function Home() {
         </CardFooter>
         <div className="flex text-sm flex-col items-center justify-center space-y-2 text-[#fafafa]">
           <p>
-            <span className="font-bold">It's currently</span>
+            <span className="font-bold">It is currently</span>
           </p>
           <Clock/>
         </div>

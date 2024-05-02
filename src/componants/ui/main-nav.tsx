@@ -14,13 +14,7 @@ export async function MainNav() {
         <nav className="flex items-center justify-between w-full h-16 px-4 bg-slate-900 text-slate-foreground">
             <div className="flex items-center w-full h-full">
                 <div className="flex items-center w-full h-full">
-                    <Link href="/">
-                            <img
-                                className="w-8 h-8 rounded-full border-2 border-slate-600"
-                                src={session.user.image}
-                                alt="JoKeR"
-                            />
-                    </Link>
+                    
                     <div className="flex items-center  w-full h-full">
                         <Link href="/">
                         <div className="flex items-center text-cyan-700 justify-center w-8 h-8 cursor-pointer hover:text-cyan-300">
