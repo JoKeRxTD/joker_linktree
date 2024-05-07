@@ -1,9 +1,6 @@
-import { FC } from "react"
 import Image from 'next/image'
 import { MainNav } from '../componants/ui/main-nav'
 import { Clock } from './timezoneapi'
-import { Input } from "../componants/ui/input"
-import { Label } from "../componants/ui/label"
 import { Button } from "../componants/ui/button"
 import {
   Card,
@@ -14,11 +11,8 @@ import {
   CardTitle,
 } from "../componants/ui/card"
 import Link from "next/link"
-export const dynamicParams = true
-export const revalidate = "300"
 
 export default function Home() {
-  const now = new Date()
   return (
     <main className="flex flex-col items-center justify-center min-h-screen py-2 bg-slate-900">
       <MainNav/>
